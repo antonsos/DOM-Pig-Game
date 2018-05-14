@@ -45,6 +45,30 @@ body {
     padding: 100px;
 }
 
+.max-score {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%);
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #555;
+    text-transform: uppercase;
+    font: inherit;
+    text-align: center;
+}
+
+.max-score:focus {
+    outline: none;
+    border: 1px solid #EB4D4D;
+}
+
+.btn-max-score {
+    position: absolute;
+    left: 60%;
+    bottom: 5.45%;
+    width: 80px;
+}
 
 
 /**********************************************
@@ -141,13 +165,20 @@ i {
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 
-.dice {
+.dice,
+.second-dice {
     position: absolute;
-    left: 50%;
     top: 178px;
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.dice {
+    left: 40%;
+}
+.second-dice {
+    left: 60%;
 }
 
 .winner { background-color: #f7f7f7; }
